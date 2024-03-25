@@ -1,0 +1,159 @@
+.navbarContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 1rem;
+}
+.navbarContainer .cart {
+  display: none;
+}
+.menubarIcon {
+  display: none;
+}
+.logoMenuIconContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: "Praise", cursive;
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+.navLinkContainerLeargeDevice {
+  font-size: 1.25rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLinkContainerLeargeDevice .cart2 {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.DropdownNavLinkContainer {
+  display: none;
+}
+
+.navLink {
+  display: block;
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.navLinkActive {
+  display: block;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.SignupButton {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+/* ------- Small Tab max-width: 768px */
+@media screen and (max-width: 768px) {
+   .navbarContainer {
+     grid-template-columns: 1fr 30px;
+   }
+   .navbarContainer .cart {
+     height: 100%;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+   }
+   .DropdownNavLinkContainer .cart2 {
+     display: none;
+   }
+   .menubarIcon {
+     display: block;
+   }
+   .logo {
+     font-size: 2rem;
+   }
+
+  
+ 
+   .navLinkContainerLeargeDevice {
+     display: none;
+   }
+   .navLinkActive {
+     border-bottom: 0;
+     font-weight: bold;
+     color: white;
+   }
+   .navLink {
+     display: block;
+     color: white;
+     text-decoration: none;
+   }
+ 
+   .dropdownMenuContainer {
+     position: fixed;
+     inset: 0;
+     background-color: var(--primary-color);
+   }
+   .DropdownNavLinkContainer {
+     height: 60%;
+     font-size: 1.8rem;
+     text-transform: uppercase;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+   }
+   .SignupButton {
+     background-color: white;
+     color: var(--primary-color);
+     margin-top: 2rem;
+   }
+   .dropdownLogoContainer {
+     height: 35%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .hr {
+     border: 1px solid white;
+   }
+   .dropdownLogo {
+     font-size: 3rem;
+     font-family: "Praise", cursive;
+     color: white;
+   }
+   .closeIcon {
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+   }
+   .dropdownHdden {
+     transform: translateX(-100%);
+     transition-duration: 500ms;
+   }
+   .dropdownShow {
+     transform: translateX(0);
+     transition-duration: 500ms;
+   }
+ }
+/* large Tab Max-width: 992px */
+@media screen and  (max-width: 992px) {
+  .navbarContainer {
+    grid-template-columns: 1fr 2fr;
+  }
+  .navLinkContainerLeargeDevice {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+}
+
