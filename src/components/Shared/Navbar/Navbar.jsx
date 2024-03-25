@@ -9,8 +9,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   return (
-    <div>
-      <Container className="navbarContainer">
+    <div className="navContainer">
+      <Container className="navbar">
         <div className="logoMenuIconContainer">
           {/* Menubar Icon for Small Device */}
           <span onClick={() => setOpen(!open)} className="menubarIcon">
@@ -38,7 +38,7 @@ const Navbar = () => {
           <p className="logo">Taste Now</p>
         </div>
         <div className="navLinkContainerLeargeDevice">
-          <NavLinks/>
+          <NavLinks />
         </div>
         <NavLink
           to={"/my-cart"}
