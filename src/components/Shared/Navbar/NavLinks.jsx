@@ -91,8 +91,7 @@ const NavLinks = () => {
         </span>
       </NavLink>
       <NavLink
-        
-        to={"/contact-us"}
+        to={"/signup"}
         className={`SignupButton `}>
         Sign Up
       </NavLink>
